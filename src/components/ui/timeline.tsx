@@ -83,17 +83,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="flex justify-start pt-6 md:pt-10 gap-4 md:gap-6"
           >
             <div className="sticky flex items-center top-16 self-start shrink-0 z-40">
-              <div className="h-7 w-7 absolute left-3.5 -translate-x-1/2 rounded-full bg-[#0c0d16] flex items-center justify-center border border-purple-500/50 shadow-[0_0_12px_rgba(168,85,247,0.4)] z-50">
+              <div className="h-7 w-7 absolute left-[30px] -translate-x-1/2 rounded-full bg-[#0c0d16] flex items-center justify-center border border-purple-500/50 shadow-[0_0_12px_rgba(168,85,247,0.4)] z-50">
                 <div className="h-2.5 w-2.5 rounded-full bg-purple-400 border border-white animate-pulse" />
               </div>
-              <div className="hidden md:block pl-10">
+              <div className="hidden md:block pl-14">
                 <span className="inline-block text-[11px] font-mono font-bold text-purple-300 bg-purple-500/15 border border-purple-500/30 px-2.5 py-1 rounded-md shadow-xs">
                   {item.title}
                 </span>
               </div>
             </div>
 
-            <div className="relative pl-10 md:pl-2 w-full grow">
+            <div className="relative pl-14 md:pl-2 w-full grow">
               <div className="md:hidden mb-2">
                 <span className="inline-block text-[10px] font-mono font-bold text-purple-300 bg-purple-500/15 border border-purple-500/30 px-2 py-0.5 rounded-md">
                   {item.title}
@@ -109,7 +109,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + 'px',
           }}
-          className="absolute md:left-7 left-7 top-0 overflow-hidden w-1 bg-white/10 rounded-full"
+          className="absolute left-[30px] -translate-x-1/2 top-0 overflow-hidden w-1 bg-white/10 rounded-full"
         >
           {/* Animated Glowing Beam Line */}
           <motion.div

@@ -567,8 +567,8 @@ function DesktopWindow({
 }: DesktopWindowProps) {
   const dragControls = useDragControls();
   const [size, setSize] = useState({
-    width: win.iframeUrl ? 960 : 840,
-    height: win.iframeUrl ? 640 : 560,
+    width: win.iframeUrl ? 980 : win.id === 'about' ? 980 : 840,
+    height: win.iframeUrl ? 650 : win.id === 'about' ? 620 : 560,
   });
   const [iframeKey, setIframeKey] = useState(0);
 
