@@ -2,7 +2,7 @@
 
 A virtual operating system portfolio built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Aceternity UI**.
 
-![Jero OS](https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75)
+![Jero OS]()
 
 ## 🚀 Features
 
