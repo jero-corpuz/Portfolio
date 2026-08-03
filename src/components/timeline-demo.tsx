@@ -5,50 +5,99 @@ import { Timeline, TimelineEntry } from '@/components/ui/timeline';
 export default function TimelineDemo() {
   const data: TimelineEntry[] = [
     {
-      title: '2024 - Present',
+      title: 'Jan 2022 – Jun 2026',
       content: (
-        <div className="space-y-4">
-          <p className="text-xs md:text-sm font-normal text-white/90 leading-relaxed font-sans bg-white/5 p-4 rounded-xl border border-white/10">
-            <strong className="text-emerald-400 font-mono">Web Developer @ Uppertech:</strong> Architecting and building custom Shopify storefronts, bespoke liquid templates, performance optimizations, and headless integrations.
-          </p>
-          <p className="text-xs md:text-sm font-normal text-white/90 leading-relaxed font-sans bg-white/5 p-4 rounded-xl border border-white/10">
-            <strong className="text-blue-400 font-mono">Web Developer Lead @ Blue Pig Web Solutions:</strong> Leading WordPress architecture, block theme development, custom plugins, and enterprise client site builds.
-          </p>
-          <div className="grid grid-cols-2 gap-3 pt-2">
-            <div className="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-300">
-              ⚡ Shopify Storefronts & Liquid API
-            </div>
-            <div className="p-3 rounded-lg bg-blue-500/10 border border-blue-500/20 text-xs font-mono text-blue-300">
-              🎨 WordPress Gutenberg Architecture
-            </div>
+        <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-blue-500/40 transition-all">
+          <h4 className="text-base font-bold text-white">
+            Web Developer <span className="text-blue-400 font-mono font-normal">@ Blue Pig Web Solutions (Baguio City)</span>
+          </h4>
+          <ul className="space-y-2 text-xs text-white/80 font-sans">
+            <li className="flex items-start gap-2">
+              <span className="text-blue-400 font-bold">•</span>
+              <span className="leading-relaxed">Develop and maintain websites across multiple platforms, implementing new features and improving functionality based on business and client requirements.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-400 font-bold">•</span>
+              <span className="leading-relaxed">Build and customize web solutions using modern web technologies, while optimizing website performance, responsiveness, and SEO.</span>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Nov 2019 – Dec 2021',
+      content: (
+        <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-purple-500/40 transition-all">
+          <h4 className="text-base font-bold text-white">
+            Junior Project Manager <span className="text-purple-400 font-mono font-normal">@ Technodream LLC (Baguio City)</span>
+          </h4>
+          <ul className="space-y-2 text-xs text-white/80 font-sans">
+            <li className="flex items-start gap-2">
+              <span className="text-purple-400 font-bold">•</span>
+              <span className="leading-relaxed">Gathered and analyzed client requirements for WordPress projects and assisted in translating them into technical specifications.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-purple-400 font-bold">•</span>
+              <span className="leading-relaxed">Coordinated between developers, designers, and clients while preparing project quotations and ensuring timely delivery.</span>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Feb 2018 – Dec 2018',
+      content: (
+        <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-emerald-500/40 transition-all">
+          <h4 className="text-base font-bold text-white">
+            Customer Support Representative <span className="text-emerald-400 font-mono font-normal">@ Sitel (Baguio City)</span>
+          </h4>
+          <ul className="space-y-2 text-xs text-white/80 font-sans">
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-400 font-bold">•</span>
+              <span className="leading-relaxed">Provided support to banking customers affected by fraud, theft, or identity-related concerns.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-400 font-bold">•</span>
+              <span className="leading-relaxed">Assisted customers with credit card inquiries while maintaining compliance with financial security procedures.</span>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: 'Project Based',
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-amber-500/40 transition-all">
+            <h5 className="text-sm font-bold text-white">
+              Shopify Developer <span className="text-amber-400 font-mono font-normal">@ Uppertech</span>
+            </h5>
+            <ul className="space-y-2 text-xs text-white/80 font-sans">
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 font-bold">•</span>
+                <span className="leading-relaxed">Developed and customized Shopify stores, implementing scalable features and optimized storefront performance.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 font-bold">•</span>
+                <span className="leading-relaxed">Managed store maintenance, updates, and troubleshooting to ensure reliability and smooth user experience.</span>
+              </li>
+            </ul>
           </div>
-        </div>
-      ),
-    },
-    {
-      title: '2023 - 2024',
-      content: (
-        <div className="space-y-4">
-          <p className="text-xs md:text-sm font-normal text-white/90 leading-relaxed font-sans bg-white/5 p-4 rounded-xl border border-white/10">
-            <strong className="text-purple-400 font-mono">Web Developer @ AviationTA:</strong> Developed the primary web platform for AviationTA (<a href="https://aviationta.aero/" target="_blank" rel="noreferrer" className="text-blue-400 underline">aviationta.aero</a>), featuring responsive booking flows, course catalogs, and client portals.
-          </p>
-          <p className="text-xs md:text-sm font-normal text-white/90 leading-relaxed font-sans bg-white/5 p-4 rounded-xl border border-white/10">
-            <strong className="text-amber-400 font-mono">Freelance Web Architect:</strong> Designed and deployed accessible WordPress & WooCommerce web apps for international clients with WCAG compliance and page speed optimization.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: 'Earlier Journey',
-      content: (
-        <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10">
-          <p className="text-xs md:text-sm text-white/80 leading-relaxed font-sans">
-            Started in Customer Support & Technical Assistance, gaining deep empathy for end-user experiences, before advancing to Project Manager coordinating engineering sprints and client deliverables.
-          </p>
-          <div className="flex flex-wrap gap-2 pt-1 font-mono text-[11px]">
-            <span className="px-2.5 py-1 rounded bg-white/10 text-white/80">Project Management</span>
-            <span className="px-2.5 py-1 rounded bg-white/10 text-white/80">Client Success</span>
-            <span className="px-2.5 py-1 rounded bg-white/10 text-white/80">Frontend Engineering</span>
+
+          <div className="space-y-3 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-cyan-500/40 transition-all">
+            <h5 className="text-sm font-bold text-white">
+              Web Developer <span className="text-cyan-400 font-mono font-normal">@ Technodream LLC</span>
+            </h5>
+            <ul className="space-y-2 text-xs text-white/80 font-sans">
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 font-bold">•</span>
+                <span className="leading-relaxed">Built and customized WordPress websites, including theme and plugin modifications based on client requirements.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 font-bold">•</span>
+                <span className="leading-relaxed">Provided technical guidance to junior developers and supported project implementation.</span>
+              </li>
+            </ul>
           </div>
         </div>
       ),

@@ -159,42 +159,52 @@ export const WALLPAPERS: WallpaperPreset[] = [
 export const EXPERIENCES: ExperienceItem[] = [
   {
     role: "Web Developer",
+    company: "Blue Pig Web Solutions (Baguio City)",
+    date: "January 2022 – June 2026",
+    type: "corporate",
+    bullets: [
+      "Develop and maintain websites across multiple platforms, implementing new features and improving functionality based on business and client requirements.",
+      "Build and customize web solutions using modern web technologies, while optimizing website performance, responsiveness, and SEO.",
+    ],
+  },
+  {
+    role: "Junior Project Manager",
+    company: "Technodream LLC (Baguio City)",
+    date: "November 2019 – December 2021",
+    type: "corporate",
+    bullets: [
+      "Gathered and analyzed client requirements for WordPress projects and assisted in translating them into technical specifications.",
+      "Coordinated between developers, designers, and clients while preparing project quotations and ensuring timely delivery.",
+    ],
+  },
+  {
+    role: "Customer Support Representative",
+    company: "Sitel (Baguio City)",
+    date: "February 2018 – December 2018",
+    type: "corporate",
+    bullets: [
+      "Provided support to banking customers affected by fraud, theft, or identity-related concerns.",
+      "Assisted customers with credit card inquiries while maintaining compliance with financial security procedures.",
+    ],
+  },
+  {
+    role: "Shopify Developer (Project Based)",
     company: "Uppertech",
-    date: "2024 - Present",
-    type: "corporate",
-    bullets: [
-      "Architecting bespoke Shopify storefronts, liquid template customizations, and headless ecommerce solutions.",
-      "Optimizing performance, page load speeds, and mobile conversion rates across multi-brand client stores.",
-    ],
-  },
-  {
-    role: "Web Developer Lead",
-    company: "Blue Pig Web Solutions",
-    date: "2024 - Present",
-    type: "corporate",
-    bullets: [
-      "Leading WordPress site architecture, custom Gutenberg block development, and plugin development.",
-      "Collaborating with UI/UX designers to translate client requirements into responsive, accessible web solutions.",
-    ],
-  },
-  {
-    role: "Web Developer",
-    company: "AviationTA",
-    date: "2023 - 2024",
-    type: "corporate",
-    bullets: [
-      "Developed main company portal (aviationta.aero) with course booking, client management, and responsive layouts.",
-      "Integrated secure authentication and payment gateways for aviation training modules.",
-    ],
-  },
-  {
-    role: "Freelance Web Architect & Consultant",
-    company: "Self-Employed",
-    date: "2022 - Present",
+    date: "Project Based",
     type: "freelance",
     bullets: [
-      "Delivered end-to-end WordPress & Shopify builds for global business clients, e-commerce brands, and local agencies.",
-      "Implemented accessibility standards (WCAG) and SEO optimization best practices.",
+      "Developed and customized Shopify stores, implementing scalable features and optimized storefront performance.",
+      "Managed store maintenance, updates, and troubleshooting to ensure reliability and smooth user experience.",
+    ],
+  },
+  {
+    role: "Web Developer (Project Based)",
+    company: "Technodream LLC",
+    date: "Project Based",
+    type: "freelance",
+    bullets: [
+      "Built and customized WordPress websites, including theme and plugin modifications based on client requirements.",
+      "Provided technical guidance to junior developers and supported project implementation.",
     ],
   },
 ];

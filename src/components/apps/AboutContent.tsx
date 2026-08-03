@@ -52,7 +52,28 @@ export default function AboutContent() {
             </p>
           </div>
 
-          {/* 2-Tab Menu Below Name Info */}
+          {/* Full Resume CTA Button (Placed Right Below Title) */}
+          <div className="w-full">
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noreferrer"
+              onClick={handleDownload}
+              className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-2 border border-white/20 font-mono text-xs"
+            >
+              {downloaded ? (
+                <>
+                  <Check className="w-4 h-4 text-emerald-300" /> Opening...
+                </>
+              ) : (
+                <>
+                  <Download className="w-4 h-4" /> Full Resume (Docs)
+                </>
+              )}
+            </a>
+          </div>
+
+          {/* 2-Tab Menu Below Resume Button */}
           <div className="w-full flex flex-col gap-1.5 p-1.5 rounded-xl bg-black/40 border border-white/10 font-mono text-xs">
             <button
               onClick={() => setActiveTab('about')}
@@ -114,27 +135,6 @@ export default function AboutContent() {
                 Shopify & WordPress
               </span>
             </div>
-          </div>
-
-          {/* Resume Download CTA Button */}
-          <div className="w-full pt-1">
-            <a
-              href={RESUME_URL}
-              target="_blank"
-              rel="noreferrer"
-              onClick={handleDownload}
-              className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-2 border border-white/20 font-mono text-xs"
-            >
-              {downloaded ? (
-                <>
-                  <Check className="w-4 h-4 text-emerald-300" /> Opening...
-                </>
-              ) : (
-                <>
-                  <Download className="w-4 h-4" /> Full Resume (Docs)
-                </>
-              )}
-            </a>
           </div>
         </div>
 
