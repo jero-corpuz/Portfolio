@@ -39,7 +39,7 @@ export const APPS: AppConfig[] = [
   },
   {
     id: "contact",
-    title: "Get in Touch",
+    title: "Contact",
     filename: "Connect_Client.app",
     iconName: "mail",
     color: "#ffb4ab",
@@ -216,8 +216,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "AviationTA Charter & Training",
     client: "AviationTA",
     category: "WordPress",
-    excerpt: "Custom WordPress experience for an aviation training and charter operator, pairing immersive storytelling with booking-ready flows.",
-    description: "Built a bespoke block theme that showcases fleet inventory, charter routes, and pilot programs with GSAP-driven motion and multilingual-ready content controls.",
+    excerpt:
+      "Custom WordPress experience for an aviation training and charter operator, pairing immersive storytelling with booking-ready flows.",
+    description:
+      "Built a bespoke block theme that showcases fleet inventory, charter routes, and pilot programs with GSAP-driven motion and multilingual-ready content controls.",
     year: "2024",
     technologies: ["WordPress", "PHP", "ACF"],
     tags: ["WordPress", "PHP", "ACF", "GSAP", "Booking UI"],
@@ -231,8 +233,10 @@ export const PROJECTS: ProjectItem[] = [
       "Integrated regional inquiry forms that sync to the client CRM via webhooks.",
       "Optimized Core Web Vitals (LCP under 1.6s) despite large hero photography.",
     ],
-    solution: "Designed a custom WordPress theme with ACF-powered sections, GSAP animations, and device-aware request forms that surface the right CTA wherever the user is.",
-    impact: "Lifted charter inquiries by 42% within the first quarter and cut publishing time for new routes from days to under an hour.",
+    solution:
+      "Designed a custom WordPress theme with ACF-powered sections, GSAP animations, and device-aware request forms that surface the right CTA wherever the user is.",
+    impact:
+      "Lifted charter inquiries by 42% within the first quarter and cut publishing time for new routes from days to under an hour.",
   },
   {
     id: "therapy-for-cancer-lives",
@@ -240,8 +244,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Therapy For Cancer Lives",
     client: "Therapyforcancerlives.com",
     category: "WordPress",
-    excerpt: "A compassion-first WordPress build for an oncology therapy collective, focused on accessibility, trust, and clear care pathways.",
-    description: "Delivered a calm, ADA-compliant site with step-by-step intake guides, translated resources, and HIPAA-aware lead routing.",
+    excerpt:
+      "A compassion-first WordPress build for an oncology therapy collective, focused on accessibility, trust, and clear care pathways.",
+    description:
+      "Delivered a calm, ADA-compliant site with step-by-step intake guides, translated resources, and HIPAA-aware lead routing.",
     year: "2024",
     technologies: ["WordPress", "PHP", "ACF"],
     tags: ["WordPress", "PHP", "ACF", "Accessibility", "WCAG AA"],
@@ -255,8 +261,10 @@ export const PROJECTS: ProjectItem[] = [
       "Built multilingual resource library with Algolia-powered filtering.",
       "Hooked IntakeQ onboarding packets directly into custom multi-step forms.",
     ],
-    solution: "Mapped the care journey, restructured content into digestible steps, and wired forms to automate warm hand-offs to the therapy team.",
-    impact: "Completed intake submissions grew 55% and support calls dropped by a third as self-serve content improved clarity.",
+    solution:
+      "Mapped the care journey, restructured content into digestible steps, and wired forms to automate warm hand-offs to the therapy team.",
+    impact:
+      "Completed intake submissions grew 55% and support calls dropped by a third as self-serve content improved clarity.",
   },
   {
     id: "house-of-comedy",
@@ -264,8 +272,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "House of Comedy Network",
     client: "Houseofcomedy.net",
     category: "WordPress & Divi",
-    excerpt: "Divi-powered entertainment hub promoting multi-city comedy venues with schedule management and ticketing CTAs.",
-    description: "Refreshed the Divi theme with reusable sections, show calendars, and sponsor integrations while keeping the low-code stack familiar to the in-house team.",
+    excerpt:
+      "Divi-powered entertainment hub promoting multi-city comedy venues with schedule management and ticketing CTAs.",
+    description:
+      "Refreshed the Divi theme with reusable sections, show calendars, and sponsor integrations while keeping the low-code stack familiar to the in-house team.",
     year: "2023",
     technologies: ["WordPress", "Divi", "WooCommerce"],
     tags: ["WordPress", "Divi", "WooCommerce", "Event UI"],
@@ -279,8 +289,10 @@ export const PROJECTS: ProjectItem[] = [
       "Synced BoxOffice ticket widgets inside Divi modules for quick swaps.",
       "Added sponsor strip and press kit downloads without touching code.",
     ],
-    solution: "Created a modular Divi design system with shared typography, event cards, and CTA patterns while preserving marketer-friendly editing.",
-    impact: "Ticket click-through improved 31% and venue managers now launch seasonal campaigns in minutes.",
+    solution:
+      "Created a modular Divi design system with shared typography, event cards, and CTA patterns while preserving marketer-friendly editing.",
+    impact:
+      "Ticket click-through improved 31% and venue managers now launch seasonal campaigns in minutes.",
   },
   {
     id: "crispin-supper-club",
@@ -288,8 +300,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Crispin Supper Club",
     client: "Crispinsupperclub.com",
     category: "WordPress & Divi",
-    excerpt: "Divi site for a private dining club highlighting chef stories, tasting menus, and membership perks.",
-    description: "Crafted a cinematic experience with layered typography, reservation prompts, and integrated newsletter capture.",
+    excerpt:
+      "Divi site for a private dining club highlighting chef stories, tasting menus, and membership perks.",
+    description:
+      "Crafted a cinematic experience with layered typography, reservation prompts, and integrated newsletter capture.",
     year: "2023",
     technologies: ["WordPress", "Divi", "Mailchimp", "Stripe"],
     tags: ["WordPress", "Divi", "Stripe", "Mailchimp"],
@@ -303,8 +317,10 @@ export const PROJECTS: ProjectItem[] = [
       "Added frictionless membership funnel tied to Stripe Checkout.",
       "Optimized imagery with responsive sources to keep load times under 1.5s.",
     ],
-    solution: "Translated chef storytelling into on-site modules and wired Divi forms to Stripe + Mailchimp so every lead is nurtured automatically.",
-    impact: "Membership deposits increased 28% and the team publishes new menu drops without designer involvement.",
+    solution:
+      "Translated chef storytelling into on-site modules and wired Divi forms to Stripe + Mailchimp so every lead is nurtured automatically.",
+    impact:
+      "Membership deposits increased 28% and the team publishes new menu drops without designer involvement.",
   },
   {
     id: "tilefixny",
@@ -312,8 +328,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Tilefix NY Studio",
     client: "Tilefixny.com",
     category: "Squarespace",
-    excerpt: "Squarespace refresh for a NYC tile repair studio, highlighting artisan quality and quick booking pathways.",
-    description: "Took a dated template and reworked it into a modern Fluid Engine layout with before/after storytelling, localized SEO, and streamlined quote capture.",
+    excerpt:
+      "Squarespace refresh for a NYC tile repair studio, highlighting artisan quality and quick booking pathways.",
+    description:
+      "Took a dated template and reworked it into a modern Fluid Engine layout with before/after storytelling, localized SEO, and streamlined quote capture.",
     year: "2024",
     technologies: ["Squarespace", "CSS"],
     tags: ["Squarespace", "Fluid Engine", "Custom CSS", "Booking UI"],
@@ -327,8 +345,10 @@ export const PROJECTS: ProjectItem[] = [
       "Service detail pages share a centralized schema, so the client edits copy once and it cascades everywhere.",
       "Embedded repair request form pushes inquiries to CRM with automated SMS confirmations for faster follow-ups.",
     ],
-    solution: "Rebuilt the site inside Squarespace Fluid Engine, layering custom CSS, reusable sections, and metadata hygiene to modernize the brand without moving platforms.",
-    impact: "Quote requests increased 35% within the first month and organic search impressions grew as localized service pages now map to borough-level queries.",
+    solution:
+      "Rebuilt the site inside Squarespace Fluid Engine, layering custom CSS, reusable sections, and metadata hygiene to modernize the brand without moving platforms.",
+    impact:
+      "Quote requests increased 35% within the first month and organic search impressions grew as localized service pages now map to borough-level queries.",
   },
   {
     id: "music-klima-de",
@@ -336,8 +356,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Music Klima Festival",
     client: "Music-klima.de",
     category: "Elementor Pro",
-    excerpt: "Elementor Pro build for a European music collective with rich media storytelling and sponsor-ready blocks.",
-    description: "Implemented immersive sections featuring audio snippets, Lottie animations, and bilingual program schedules.",
+    excerpt:
+      "Elementor Pro build for a European music collective with rich media storytelling and sponsor-ready blocks.",
+    description:
+      "Implemented immersive sections featuring audio snippets, Lottie animations, and bilingual program schedules.",
     year: "2024",
     technologies: ["WordPress", "Elementor Pro"],
     tags: ["WordPress", "Elementor Pro", "Lottie", "Multilingual"],
@@ -351,8 +373,10 @@ export const PROJECTS: ProjectItem[] = [
       "Single-click theme tokens let curators refresh color palettes per season.",
       "Sponsor marquee auto-populates from a CMS repeater to keep logos fresh.",
     ],
-    solution: "Used Elementor containers + custom CSS to create responsive, media-rich layouts editors can tweak visually.",
-    impact: "Press kit downloads doubled and partner referrals now account for 38% of site traffic.",
+    solution:
+      "Used Elementor containers + custom CSS to create responsive, media-rich layouts editors can tweak visually.",
+    impact:
+      "Press kit downloads doubled and partner referrals now account for 38% of site traffic.",
   },
   {
     id: "ked-bluestone",
@@ -360,8 +384,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "KED Bluestone Architectural",
     client: "Kedbluestone.com",
     category: "Elementor Pro",
-    excerpt: "Elementor-powered site for an architectural stone supplier with immersive galleries and spec downloads.",
-    description: "Blended editorial storytelling with B2B utility—builders can browse surfaces, order samples, and download CAD packs from one responsive hub.",
+    excerpt:
+      "Elementor-powered site for an architectural stone supplier with immersive galleries and spec downloads.",
+    description:
+      "Blended editorial storytelling with B2B utility—builders can browse surfaces, order samples, and download CAD packs from one responsive hub.",
     year: "2023",
     technologies: ["WordPress", "Elementor", "ACF"],
     tags: ["WordPress", "Elementor", "ACF", "B2B Catalog"],
@@ -375,8 +401,10 @@ export const PROJECTS: ProjectItem[] = [
       "Spec sheet request form writes leads straight into HubSpot.",
       "Implemented multilingual toggle for architects working across regions.",
     ],
-    solution: "Shipped a content-managed surface catalog with sample ordering workflows and CRM sync.",
-    impact: "Sample requests tripled and the sales team now tracks every architectural inquiry with source attribution.",
+    solution:
+      "Shipped a content-managed surface catalog with sample ordering workflows and CRM sync.",
+    impact:
+      "Sample requests tripled and the sales team now tracks every architectural inquiry with source attribution.",
   },
   {
     id: "words2action",
@@ -384,8 +412,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Words2Action Collective",
     client: "Words2action.org",
     category: "Elementor Pro",
-    excerpt: "Advocacy hub built on Elementor featuring campaign storytelling, donation funnels, and volunteer management.",
-    description: "Created a modular system that lets organizers spin up campaigns, embed petitions, and show real-time progress without writing code.",
+    excerpt:
+      "Advocacy hub built on Elementor featuring campaign storytelling, donation funnels, and volunteer management.",
+    description:
+      "Created a modular system that lets organizers spin up campaigns, embed petitions, and show real-time progress without writing code.",
     year: "2023",
     technologies: ["WordPress", "Elementor Pro"],
     tags: ["WordPress", "Elementor Pro", "GiveWP", "Airtable"],
@@ -399,8 +429,10 @@ export const PROJECTS: ProjectItem[] = [
       "Volunteer stories auto-rotate via CMS and include audio snippets.",
       "Event signups push to Airtable for resource planning.",
     ],
-    solution: "Centralized every initiative in WordPress with structured data, donation tracking, and volunteer pipelines.",
-    impact: "Donations increased 37% MoM and volunteer onboarding time dropped from a week to two days.",
+    solution:
+      "Centralized every initiative in WordPress with structured data, donation tracking, and volunteer pipelines.",
+    impact:
+      "Donations increased 37% MoM and volunteer onboarding time dropped from a week to two days.",
   },
   {
     id: "pure-and-pastry",
@@ -408,8 +440,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Pure & Pastry Bakery",
     client: "Pureandpastry.com",
     category: "Shopify",
-    excerpt: "Shopify OS 2.0 storefront for a gluten-free bakery with subscriptions, build-a-box experiences, and local pickup scheduling.",
-    description: "Launched a playful yet performance-focused theme featuring story-driven PDPs, dynamic nutrition labels, and SMS-ready checkout flows.",
+    excerpt:
+      "Shopify OS 2.0 storefront for a gluten-free bakery with subscriptions, build-a-box experiences, and local pickup scheduling.",
+    description:
+      "Launched a playful yet performance-focused theme featuring story-driven PDPs, dynamic nutrition labels, and SMS-ready checkout flows.",
     year: "2022",
     technologies: ["Shopify OS 2.0"],
     tags: ["Shopify", "Liquid", "Recharge", "Subscriptions"],
@@ -423,8 +457,10 @@ export const PROJECTS: ProjectItem[] = [
       "Subscription logic built on Recharge with pause/skip automation.",
       "Pickup scheduler coordinates bakery capacity and closes slots in real time.",
     ],
-    solution: "Implemented Shopify OS 2.0 with modular sections and automated subscriptions so operations run on one platform.",
-    impact: "Repeat orders now account for 61% of revenue and food waste dropped thanks to accurate production forecasts.",
+    solution:
+      "Implemented Shopify OS 2.0 with modular sections and automated subscriptions so operations run on one platform.",
+    impact:
+      "Repeat orders now account for 61% of revenue and food waste dropped thanks to accurate production forecasts.",
   },
   {
     id: "region-rx",
@@ -432,8 +468,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "RegionRX Regulated Store",
     client: "Regionrx.com",
     category: "Shopify",
-    excerpt: "Regulated CBD retailer on Shopify with gated catalogs, education funnels, and pharmacist consultations.",
-    description: "Architected compliance-friendly PDPs, dosage calculators, and region-aware cart rules to navigate hilly regulations.",
+    excerpt:
+      "Regulated CBD retailer on Shopify with gated catalogs, education funnels, and pharmacist consultations.",
+    description:
+      "Architected compliance-friendly PDPs, dosage calculators, and region-aware cart rules to navigate hilly regulations.",
     year: "2022",
     technologies: ["Shopify"],
     tags: ["Shopify", "Shopify Functions", "Compliance", "Calendly"],
@@ -447,8 +485,10 @@ export const PROJECTS: ProjectItem[] = [
       "Education center with faceted search guiding customers to safe usage.",
       "Consult booking integrates with Calendly + DrChrono for pharmacists.",
     ],
-    solution: "Added automated compliance checks, educational funnels, and dynamic pricing rules tied to jurisdiction.",
-    impact: "Approved customers get to checkout 3× faster and compliance flags are logged centrally for audits.",
+    solution:
+      "Added automated compliance checks, educational funnels, and dynamic pricing rules tied to jurisdiction.",
+    impact:
+      "Approved customers get to checkout 3× faster and compliance flags are logged centrally for audits.",
   },
   {
     id: "fishpond-inc",
@@ -456,8 +496,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Fishpond Inc. Equipment",
     client: "Fishpondinc.com",
     category: "Shopify",
-    excerpt: "Premium fly-fishing equipment site with lifestyle storytelling, wholesale ordering, and dealer tools.",
-    description: "Refined the theme with long-form journal templates, dynamic lookbooks, and dealer locator integrations without sacrificing page speed.",
+    excerpt:
+      "Premium fly-fishing equipment site with lifestyle storytelling, wholesale ordering, and dealer tools.",
+    description:
+      "Refined the theme with long-form journal templates, dynamic lookbooks, and dealer locator integrations without sacrificing page speed.",
     year: "2021",
     technologies: ["Shopify"],
     tags: ["Shopify", "Liquid", "Algolia", "Wholesale B2B"],
@@ -471,8 +513,10 @@ export const PROJECTS: ProjectItem[] = [
       "Story-driven PDPs mixing video, specs, and testimonials.",
       "Wholesale portal shares codebase but enforces tiered pricing.",
     ],
-    solution: "Merged storytelling, B2B ordering, and DTC flows into a single Shopify codebase with role-aware components.",
-    impact: "Wholesale orders moved online (80% adoption) and PDP engagement metrics rose across the board.",
+    solution:
+      "Merged storytelling, B2B ordering, and DTC flows into a single Shopify codebase with role-aware components.",
+    impact:
+      "Wholesale orders moved online (80% adoption) and PDP engagement metrics rose across the board.",
   },
   {
     id: "i-want-candy",
@@ -480,8 +524,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "I Want Candy Store",
     client: "Iwantcandy.us",
     category: "Shopify",
-    excerpt: "Sugar-rush Shopify store with custom mix & match builder, seasonal drops, and influencer-ready landing pages.",
-    description: "Delivered a playful aesthetic with candy-conveyor animations, bundling logic, and TikTok-ready tracking.",
+    excerpt:
+      "Sugar-rush Shopify store with custom mix & match builder, seasonal drops, and influencer-ready landing pages.",
+    description:
+      "Delivered a playful aesthetic with candy-conveyor animations, bundling logic, and TikTok-ready tracking.",
     year: "2021",
     technologies: ["Shopify"],
     tags: ["Shopify", "React Bundle", "Liquid", "TikTok Pixel"],
@@ -495,8 +541,10 @@ export const PROJECTS: ProjectItem[] = [
       "Seasonal landing pages share a single JSON schema for quick swaps.",
       "Influencer-specific discount links auto-tag orders for attribution.",
     ],
-    solution: "Extended Shopify sections with schema controls and built a React-powered bundle tool that feeds Liquid metafields.",
-    impact: "Bundle sales now represent 48% of GMV and influencer campaigns report real ROI with tagged orders.",
+    solution:
+      "Extended Shopify sections with schema controls and built a React-powered bundle tool that feeds Liquid metafields.",
+    impact:
+      "Bundle sales now represent 48% of GMV and influencer campaigns report real ROI with tagged orders.",
   },
   {
     id: "gladiator-mgmt-agency",
@@ -504,8 +552,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Gladiator Management Agency",
     client: "Gladiatormgmtagency.com",
     category: "Duda",
-    excerpt: "Duda platform site for a talent agency combining roster management, embedded reels, and automated lead routing.",
-    description: "Extended Duda widgets to support dynamic rosters, spotlight overlays, and CRM-integrated inquiry flows.",
+    excerpt:
+      "Duda platform site for a talent agency combining roster management, embedded reels, and automated lead routing.",
+    description:
+      "Extended Duda widgets to support dynamic rosters, spotlight overlays, and CRM-integrated inquiry flows.",
     year: "2023",
     technologies: ["Duda"],
     tags: ["Duda", "Airtable Sync", "Zapier", "Video Reels"],
@@ -519,8 +569,10 @@ export const PROJECTS: ProjectItem[] = [
       "Embedded reel player adapts aspect ratios without cropping talent.",
       "Leads route to the right agent via Zapier + Slack alerts.",
     ],
-    solution: "Centralized the roster in Airtable, sync’d it to Duda via custom widgets, and automated routing so agents respond instantly.",
-    impact: "Response time dropped from 48 hours to under 6, and roster edits take minutes instead of days.",
+    solution:
+      "Centralized the roster in Airtable, sync’d it to Duda via custom widgets, and automated routing so agents respond instantly.",
+    impact:
+      "Response time dropped from 48 hours to under 6, and roster edits take minutes instead of days.",
   },
   {
     id: "23-wines",
@@ -528,8 +580,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "23 Wines Boutique Importer",
     client: "23wines.com",
     category: "Duda",
-    excerpt: "Duda commerce experience for a boutique importer featuring tasting notes, club tiers, and vineyard storytelling.",
-    description: "Designed atmospheric layouts with scroll-triggered parallax, regional maps, and an embedded wine club sign-up.",
+    excerpt:
+      "Duda commerce experience for a boutique importer featuring tasting notes, club tiers, and vineyard storytelling.",
+    description:
+      "Designed atmospheric layouts with scroll-triggered parallax, regional maps, and an embedded wine club sign-up.",
     year: "2022",
     technologies: ["Duda"],
     tags: ["Duda", "Ecwid Commerce", "Wine Club", "Parallax"],
@@ -543,8 +597,10 @@ export const PROJECTS: ProjectItem[] = [
       "Club tier selector educates users before capturing payment in Ecwid.",
       "CRM automations tag leads by varietal interest for targeted drops.",
     ],
-    solution: "Leveraged Duda + Ecwid for quick commerce, layering custom scripts for club management and lead nurturing.",
-    impact: "Wine club churn fell below 5% and product discovery time dropped thanks to improved filtering.",
+    solution:
+      "Leveraged Duda + Ecwid for quick commerce, layering custom scripts for club management and lead nurturing.",
+    impact:
+      "Wine club churn fell below 5% and product discovery time dropped thanks to improved filtering.",
   },
   {
     id: "gotham-comedy",
@@ -552,8 +608,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Gotham Comedy Club",
     client: "Gothamcomedyclub.com",
     category: "Webflow",
-    excerpt: "Webflow CMS build for an iconic comedy venue with interactive calendars, podcast embeds, and sponsor inventory.",
-    description: "Reimagined the experience with CMS collections for shows, talent, and partnerships, powered by micro-animations.",
+    excerpt:
+      "Webflow CMS build for an iconic comedy venue with interactive calendars, podcast embeds, and sponsor inventory.",
+    description:
+      "Reimagined the experience with CMS collections for shows, talent, and partnerships, powered by micro-animations.",
     year: "2023",
     technologies: ["Webflow"],
     tags: ["Webflow", "Webflow CMS", "Memberstack", "Event UI"],
@@ -567,8 +625,10 @@ export const PROJECTS: ProjectItem[] = [
       "Memberstack powers VIP presales without leaving Webflow.",
       "Sponsor billboards rotate automatically using CMS controls.",
     ],
-    solution: "Migrated to Webflow CMS for stability, added Memberstack for gated content, and automated sponsor inventory with collections.",
-    impact: "Presale memberships grew 3× and sponsor revenue per month increased 26%.",
+    solution:
+      "Migrated to Webflow CMS for stability, added Memberstack for gated content, and automated sponsor inventory with collections.",
+    impact:
+      "Presale memberships grew 3× and sponsor revenue per month increased 26%.",
   },
   {
     id: "studio-wrx",
@@ -576,8 +636,10 @@ export const PROJECTS: ProjectItem[] = [
     title: "Studio WRX Design Lab",
     client: "Studiowrx.com",
     category: "WordPress",
-    excerpt: "WPBakery-powered portfolio for an automotive design lab featuring case studies, reels, and press coverage.",
-    description: "Refined an existing WPBakery build with reusable templates, high-impact video headers, and performance-minded code cleanup.",
+    excerpt:
+      "WPBakery-powered portfolio for an automotive design lab featuring case studies, reels, and press coverage.",
+    description:
+      "Refined an existing WPBakery build with reusable templates, high-impact video headers, and performance-minded code cleanup.",
     year: "2020",
     technologies: ["WordPress", "WPBakery"],
     tags: ["WordPress", "WPBakery", "Video Header", "Optimization"],
@@ -591,8 +653,10 @@ export const PROJECTS: ProjectItem[] = [
       "Lazy-loaded 4K video reels while keeping motion intact.",
       "Added sticky spec sheets that highlight drivetrain data per build.",
     ],
-    solution: "Audited the codebase, trimmed unused scripts, and introduced template discipline without changing the authoring tool.",
-    impact: "PageSpeed scores improved by 20 points and the marketing team doubled publishing cadence without regressions.",
+    solution:
+      "Audited the codebase, trimmed unused scripts, and introduced template discipline without changing the authoring tool.",
+    impact:
+      "PageSpeed scores improved by 20 points and the marketing team doubled publishing cadence without regressions.",
   },
 ];
 

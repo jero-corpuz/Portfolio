@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { PROJECTS } from '@/data/osData';
+import { ProjectItem } from '@/types/os';
 import { Layers, Star, ExternalLink, Maximize2 } from 'lucide-react';
 
 interface ProjectsContentProps {
@@ -31,7 +32,7 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
             p.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase())
         );
 
-  const handleProjectClick = (project: typeof PROJECTS[0]) => {
+  const handleOpenProjectWindow = (project: ProjectItem) => {
     if (project.link && onOpenProjectFrame) {
       onOpenProjectFrame(project.title, project.link);
     } else if (project.link) {
@@ -41,14 +42,14 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
 
   return (
     <div className="space-y-6 text-[#e5e2e1]">
-      {/* Header & Filter */}
+      {/* Header & Category Filter */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-4">
         <div>
           <h3 className="text-xl font-bold text-white flex items-center gap-2">
             <Layers className="w-5 h-5 text-emerald-400" /> Jero's Featured Projects
           </h3>
           <p className="text-xs text-white/60 font-mono mt-0.5">
-            Showing {filteredProjects.length} projects • Click any project to open an interactive desktop iframe
+            Showing {filteredProjects.length} projects • Click any project card to launch a dedicated OS window
           </p>
         </div>
 
@@ -70,16 +71,18 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
         </div>
       </div>
 
-      {/* Clean 2-Column Projects Grid */}
+      {/* 2-Column Grid List of Cards (Clicking opens new OS Window) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            onClick={() => handleProjectClick(project)}
+            onClick={() => handleOpenProjectWindow(project)}
             className="group relative rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/50 p-5 transition-all hover:bg-white/8 flex flex-col justify-between overflow-hidden shadow-lg cursor-pointer"
           >
             {/* Background Accent Glow */}
-            <div className={`absolute top-0 right-0 w-32 h-32 bg-linear-to-bl ${project.gradient} opacity-20 blur-2xl group-hover:opacity-40 transition-opacity pointer-events-none`} />
+            <div
+              className={`absolute top-0 right-0 w-32 h-32 bg-linear-to-bl ${project.gradient} opacity-20 blur-2xl group-hover:opacity-40 transition-opacity pointer-events-none`}
+            />
 
             <div>
               <div className="flex justify-between items-start mb-3">
@@ -94,10 +97,10 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
                 </span>
               </div>
 
-              <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors mb-1.5 flex items-center justify-between">
+              <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors mb-1.5 flex items-center justify-between">
                 {project.title}
                 <Maximize2 className="w-4 h-4 text-white/30 group-hover:text-emerald-400 transition-colors shrink-0" />
-              </h4>
+              </h3>
 
               <p className="text-xs text-emerald-400/90 font-mono mb-2">
                 Client: {project.client}
@@ -126,11 +129,11 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleProjectClick(project);
+                  handleOpenProjectWindow(project);
                 }}
-                className="flex items-center gap-1 text-white bg-emerald-600 hover:bg-emerald-500 px-3 py-1 rounded-lg border border-emerald-400/30 transition-all font-bold cursor-pointer"
+                className="flex items-center gap-1.5 text-white bg-emerald-600 hover:bg-emerald-500 px-3.5 py-1.5 rounded-xl border border-emerald-400/30 transition-all font-bold cursor-pointer shadow-md"
               >
-                Launch Live Site <ExternalLink className="w-3 h-3" />
+                Open OS Window <ExternalLink className="w-3.5 h-3.5" />
               </button>
             </div>
           </div>

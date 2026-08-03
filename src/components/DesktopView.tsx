@@ -619,6 +619,8 @@ function DesktopWindow({
         height: win.isMaximized ? 'calc(100vh - 2.25rem - 4.5rem)' : `${size.height}px`,
         left: win.isMaximized ? 0 : `${win.x}px`,
         top: win.isMaximized ? '2.25rem' : `${win.y}px`,
+        willChange: 'transform, opacity',
+        transform: 'translateZ(0)',
       }}
       className={`fixed bg-[#0c0d16] border flex flex-col shadow-2xl transition-shadow overflow-hidden pointer-events-auto ${
         win.isMaximized ? 'rounded-none z-99' : 'rounded-2xl'
