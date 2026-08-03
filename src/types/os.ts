@@ -29,14 +29,24 @@ export type ViewMode = 'desktop' | 'mobile';
 
 export interface ProjectItem {
   id: string;
+  slug: string;
   title: string;
-  description: string;
+  client: string;
   category: string;
+  excerpt: string;
+  description: string;
+  year: string;
+  technologies: string[];
   tags: string[];
   gradient: string;
   stars: string;
-  link?: string;
+  link: string;
   metrics: string;
+  highlights: string[];
+  solution: string;
+  impact: string;
+  coverImage?: string;
+  githubUrl?: string | null;
 }
 
 export interface SkillCategory {
