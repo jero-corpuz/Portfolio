@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: 'Jero OS Portfolio',
     images: [
       {
-        url: 'https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75',
+        url: '/images/avatar/avatar.jpg',
         width: 1200,
         height: 630,
         alt: 'Jero OS Virtual Operating System Portfolio',
@@ -60,9 +60,7 @@ export const metadata: Metadata = {
     title: 'Jero OS - Virtual Operating System Portfolio',
     description:
       'Interactive Virtual Operating System Portfolio of Jero Corpuz built with Next.js & Aceternity UI.',
-    images: [
-      'https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75',
-    ],
+    images: ['/images/avatar/avatar.jpg'],
   },
   icons: {
     icon: '/favicon.ico',

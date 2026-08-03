@@ -2,7 +2,7 @@
 
 A virtual operating system portfolio built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Aceternity UI**.
 
-![Jero OS]()
+![Jero OS](./public/images/avatar/avatar.jpg)
 
 ## 🚀 Features
 
