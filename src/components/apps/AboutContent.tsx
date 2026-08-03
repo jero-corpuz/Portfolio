@@ -16,8 +16,7 @@ const TimelineDemo = dynamic(() => import('../timeline-demo'), { ssr: false });
 const RESUME_URL =
   'https://docs.google.com/document/d/1tt9LQ9mTlnZNipFOeCpIIifr95rXS9p6/edit?rtpof=true&sd=true&tab=t.0';
 
-const AVATAR_URL =
-  'https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75';
+const AVATAR_URL = '/images/avatar/avatar.jpg';
 
 export default function AboutContent() {
   const [activeTab, setActiveTab] = useState<'about' | 'experience'>('about');
