@@ -30,7 +30,7 @@ export default function AboutContent() {
 
   return (
     <div className="space-y-6 text-[#e5e2e1]">
-      <div className="grid grid-cols-1 md:grid-cols-[270px_1fr] gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-start">
         {/* Profile Sidebar */}
         <div className="flex flex-col items-center space-y-5 bg-white/5 p-6 rounded-2xl border border-white/10">
           <div className="relative group">

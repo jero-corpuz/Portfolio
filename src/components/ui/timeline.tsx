@@ -80,21 +80,25 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-6 md:pt-12 md:gap-6"
+            className="flex justify-start pt-6 md:pt-10 gap-4 md:gap-6"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-16 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-8 absolute left-3 md:left-3 w-8 rounded-full bg-[#0c0d16] flex items-center justify-center border border-purple-500/50 shadow-[0_0_12px_rgba(168,85,247,0.4)] z-50">
-                <div className="h-3 w-3 rounded-full bg-purple-400 border border-white animate-pulse" />
+            <div className="sticky flex items-center top-16 self-start shrink-0 z-40">
+              <div className="h-7 w-7 absolute left-3.5 -translate-x-1/2 rounded-full bg-[#0c0d16] flex items-center justify-center border border-purple-500/50 shadow-[0_0_12px_rgba(168,85,247,0.4)] z-50">
+                <div className="h-2.5 w-2.5 rounded-full bg-purple-400 border border-white animate-pulse" />
               </div>
-              <h3 className="hidden md:block text-xs md:text-sm font-semibold md:pl-14 text-purple-400 font-mono tracking-wider">
-                {item.title}
-              </h3>
+              <div className="hidden md:block pl-10">
+                <span className="inline-block text-[11px] font-mono font-bold text-purple-300 bg-purple-500/15 border border-purple-500/30 px-2.5 py-1 rounded-md shadow-xs">
+                  {item.title}
+                </span>
+              </div>
             </div>
 
-            <div className="relative pl-12 pr-2 md:pl-4 w-full">
-              <h3 className="md:hidden block text-xs font-semibold mb-2 text-left text-purple-400 font-mono tracking-wider">
-                {item.title}
-              </h3>
+            <div className="relative pl-10 md:pl-2 w-full grow">
+              <div className="md:hidden mb-2">
+                <span className="inline-block text-[10px] font-mono font-bold text-purple-300 bg-purple-500/15 border border-purple-500/30 px-2 py-0.5 rounded-md">
+                  {item.title}
+                </span>
+              </div>
               {item.content}
             </div>
           </div>
