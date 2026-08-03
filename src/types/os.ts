@@ -1,4 +1,4 @@
-export type AppId = 'about' | 'experience' | 'projects' | 'skills' | 'contact' | 'camera';
+export type AppId = 'about' | 'experience' | 'projects' | 'skills' | 'contact' | 'camera' | 'wallpaper';
 
 export interface AppConfig {
   id: AppId;
@@ -34,14 +34,13 @@ export interface ProjectItem {
   category: string;
   tags: string[];
   gradient: string;
-  stars: number;
+  stars: string;
   link?: string;
   metrics: string;
 }
 
 export interface SkillCategory {
   title: string;
-  icon: string;
   skills: { name: string; level: number; tag: string }[];
 }
 
@@ -51,4 +50,12 @@ export interface ExperienceItem {
   company: string;
   type: 'corporate' | 'freelance';
   bullets: string[];
+}
+
+export interface WallpaperPreset {
+  id: string;
+  name: string;
+  category: string;
+  previewGradient: string;
+  styleClass?: string;
 }

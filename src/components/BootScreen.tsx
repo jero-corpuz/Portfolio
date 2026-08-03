@@ -9,7 +9,7 @@ interface BootScreenProps {
 }
 
 const BOOT_MESSAGES = [
-  'PortfolioOS Kernel v2026.8.3 loading...',
+  'Jero OS Kernel v2026.8.3 loading...',
   'Initializing Linux x86_64 architecture...',
   'Mounting virtual filesystem /dev/nvme0n1p2...',
   'Loading Glassmorphism Display Server & Compositor...',
@@ -18,7 +18,7 @@ const BOOT_MESSAGES = [
   'Injecting custom dark Linux pointer subsystem...',
   'Calibrating dynamic particle background blobs...',
   'System check complete: All 4 virtual sub-apps initialized.',
-  'Starting PortfolioOS Desktop Session...',
+  'Starting Jero OS Desktop Session...',
 ];
 
 export default function BootScreen({ onBootComplete }: BootScreenProps) {
@@ -90,7 +90,7 @@ export default function BootScreen({ onBootComplete }: BootScreenProps) {
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-blue-500 animate-ping" />
               <span className="text-sm font-bold tracking-widest text-blue-400 uppercase flex items-center gap-2">
-                <Terminal className="w-4 h-4" /> PortfolioOS Bootloader
+                <Terminal className="w-4 h-4" /> Jero OS Bootloader
               </span>
             </div>
             <div className="flex items-center gap-4 text-xs text-white/50">
@@ -121,7 +121,7 @@ export default function BootScreen({ onBootComplete }: BootScreenProps) {
             </motion.div>
 
             <h1 className="text-3xl font-extrabold tracking-tight text-white mb-2 text-center font-sans">
-              Portfolio<span className="text-blue-500">OS</span>
+              Jero <span className="text-blue-500">OS</span>
             </h1>
             <p className="text-xs text-white/50 tracking-widest uppercase mb-8">
               Virtual Operating System Environment

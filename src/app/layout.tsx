@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -14,10 +14,59 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  themeColor: '#05050a',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
-  title: 'PortfolioOS - Virtual Operating System Portfolio',
+  title: 'Jero OS - Virtual Operating System Portfolio',
   description:
-    'Interactive Virtual Operating System Portfolio built with Next.js featuring Vibrant Glassmorphic Desktop View and iPhone Grid Mobile View.',
+    'Interactive Virtual Operating System Portfolio of Jero Corpuz (Web Developer & Architecture Lead). Built with Next.js, TypeScript, and Aceternity UI.',
+  keywords: [
+    'Jero Corpuz',
+    'Jero OS',
+    'Web Developer Portfolio',
+    'Shopify Developer',
+    'WordPress Architect',
+    'Next.js OS Portfolio',
+    'Aceternity UI',
+    'Virtual Desktop Portfolio',
+  ],
+  authors: [{ name: 'Jero Corpuz', url: 'https://jero-portfolio.netlify.app/' }],
+  creator: 'Jero Corpuz',
+  openGraph: {
+    title: 'Jero OS - Virtual Operating System Portfolio',
+    description:
+      'Explore Jero Corpuz\'s web development portfolio in an interactive virtual operating system environment.',
+    url: 'https://jero-portfolio.netlify.app/',
+    siteName: 'Jero OS Portfolio',
+    images: [
+      {
+        url: 'https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75',
+        width: 1200,
+        height: 630,
+        alt: 'Jero OS Virtual Operating System Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jero OS - Virtual Operating System Portfolio',
+    description:
+      'Interactive Virtual Operating System Portfolio of Jero Corpuz built with Next.js & Aceternity UI.',
+    images: [
+      'https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75',
+    ],
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +76,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="antialiased bg-[#05050a] text-[#e5e2e1] select-none overflow-hidden h-screen w-screen">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://jero-portfolio.netlify.app" />
+      </head>
+      <body className="antialiased bg-[#05050a] text-[#e5e2e1] select-none overflow-hidden h-screen w-screen transform-gpu">
         {children}
       </body>
     </html>
