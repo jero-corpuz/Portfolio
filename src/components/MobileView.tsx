@@ -5,9 +5,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { AppId } from '@/types/os';
 import { APPS } from '@/data/osData';
 import WindowContent from './WindowContent';
-import { Boxes } from '@/components/ui/background-boxes';
-import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-import { WavyBackground } from '@/components/ui/wavy-background';
+import dynamic from 'next/dynamic';
+
+const Boxes = dynamic(() => import('@/components/ui/background-boxes').then(m => m.Boxes), { ssr: false });
+const BackgroundGradientAnimation = dynamic(() => import('@/components/ui/background-gradient-animation').then(m => m.BackgroundGradientAnimation), { ssr: false });
+const WavyBackground = dynamic(() => import('@/components/ui/wavy-background').then(m => m.WavyBackground), { ssr: false });
+const FloatingLines = dynamic(() => import('@/components/ui/floating-lines'), { ssr: false });
+const Particles = dynamic(() => import('@/components/ui/particles'), { ssr: false });
+
 import {
   Signal,
   Wifi,
@@ -103,32 +108,89 @@ export default function MobileView({ onSwitchToDesktop, onReboot }: MobileViewPr
   return (
     <div className="relative h-screen w-screen bg-[#131313] text-[#e5e2e1] font-sans select-none overflow-hidden flex flex-col justify-between">
       {/* Wallpaper Engine Canvas */}
-      {activeWallpaper === 'boxes' ? (
-        <div className="fixed inset-0 bg-slate-900 overflow-hidden pointer-events-auto">
-          <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 mask-[radial-gradient(transparent,white)] pointer-events-none" />
-          <Boxes />
-        </div>
-      ) : activeWallpaper === 'gradient-anim' ? (
-        <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <BackgroundGradientAnimation />
-        </div>
-      ) : activeWallpaper === 'wavy' ? (
-        <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <WavyBackground />
-        </div>
-      ) : activeWallpaper === 'synthwave' ? (
-        <div className="fixed inset-0 bg-linear-to-b from-fuchsia-950 via-purple-900 to-black pointer-events-none" />
-      ) : activeWallpaper === 'sunset' ? (
-        <div className="fixed inset-0 bg-sunset-canvas pointer-events-none" />
-      ) : activeWallpaper === 'matrix' ? (
-        <div className="fixed inset-0 bg-black pointer-events-none" />
-      ) : activeWallpaper === 'space' ? (
-        <div className="fixed inset-0 bg-[#060713] pointer-events-none" />
-      ) : activeWallpaper === 'minimal' ? (
-        <div className="fixed inset-0 bg-[#0f1017] pointer-events-none" />
-      ) : (
-        <div className="fixed inset-0 bg-linear-to-b from-[#1a1a3a] via-[#0a0a20] to-black pointer-events-none" />
-      )}
+      <div className="fixed inset-0 z-0 overflow-hidden bg-[#05050a] pointer-events-auto">
+        {activeWallpaper === 'floating-lines' ? (
+          <div className="absolute inset-0 bg-[#05050a] overflow-hidden pointer-events-auto">
+            <FloatingLines
+              linesGradient={['#e947f5', '#4775a2', '#2f4ba2', '#ec4899']}
+              enabledWaves={['top', 'middle', 'bottom']}
+              lineCount={[8, 12, 16]}
+              lineDistance={[8, 6, 4]}
+              bendRadius={6.0}
+              bendStrength={-0.8}
+              interactive={true}
+              parallax={true}
+            />
+          </div>
+        ) : activeWallpaper === 'particles' ? (
+          <div className="absolute inset-0 bg-[#05050a] overflow-hidden pointer-events-auto">
+            <Particles
+              particleColors={['#60a5fa', '#a855f7', '#ec4899', '#34d399']}
+              particleCount={120}
+              particleSpread={10}
+              speed={0.15}
+              particleBaseSize={100}
+              moveParticlesOnHover={true}
+              alphaParticles={true}
+              disableRotation={false}
+            />
+          </div>
+        ) : activeWallpaper === 'boxes' ? (
+          <div className="absolute inset-0 bg-slate-900 overflow-hidden pointer-events-auto">
+            <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 mask-[radial-gradient(transparent,white)] pointer-events-none" />
+            <Boxes />
+          </div>
+        ) : activeWallpaper === 'gradient-anim' ? (
+          <div className="absolute inset-0 overflow-hidden pointer-events-auto">
+            <BackgroundGradientAnimation />
+          </div>
+        ) : activeWallpaper === 'wavy' ? (
+          <div className="absolute inset-0 overflow-hidden pointer-events-auto">
+            <WavyBackground />
+          </div>
+        ) : activeWallpaper === 'synthwave' ? (
+          <div className="absolute inset-0 bg-linear-to-b from-fuchsia-950 via-purple-900 to-black">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#ec4899_0%,transparent_60%)] opacity-40" />
+            <div className="abstract-blob w-100 h-100 bg-pink-600 top-[-10%] left-[20%] opacity-40 animate-pulse" />
+          </div>
+        ) : activeWallpaper === 'cyber-grid' ? (
+          <div className="absolute inset-0 bg-linear-to-b from-pink-950 via-cyan-950 to-black overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#06b6d4_0%,transparent_70%)] opacity-35" />
+            <div className="abstract-blob w-100 h-100 bg-cyan-500 top-[10%] left-[20%] opacity-30 animate-pulse" />
+          </div>
+        ) : activeWallpaper === 'sunset' ? (
+          <div className="absolute inset-0 bg-linear-to-b from-amber-950 via-rose-950 to-black">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,#f43f5e_0%,transparent_70%)] opacity-45" />
+          </div>
+        ) : activeWallpaper === 'matrix' ? (
+          <div className="absolute inset-0 bg-black">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#052e16_0%,transparent_80%)]" />
+          </div>
+        ) : activeWallpaper === 'aurora' ? (
+          <div className="absolute inset-0 bg-linear-to-b from-teal-950 via-emerald-950 to-black">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#14b8a6_0%,transparent_65%)] opacity-40" />
+          </div>
+        ) : activeWallpaper === 'space' ? (
+          <div className="absolute inset-0 bg-[#060713]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#1e1b4b_0%,transparent_60%)]" />
+            <div className="abstract-blob w-100 h-100 bg-indigo-700 top-[10%] left-[30%] opacity-25" />
+          </div>
+        ) : activeWallpaper === 'nebula' ? (
+          <div className="absolute inset-0 bg-linear-to-b from-purple-950 via-violet-900 to-black">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#8b5cf6_0%,transparent_70%)] opacity-35" />
+          </div>
+        ) : activeWallpaper === 'minimal' ? (
+          <div className="absolute inset-0 bg-[#0f1017]" />
+        ) : (
+          /* Default Cyber Blobs */
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#1a1a3a_0%,transparent_50%),radial-gradient(circle_at_80%_80%,#0a0a20_0%,transparent_50%)]" />
+            <div className="abstract-blob w-100 h-100 bg-[#2e7cff] top-[-10%] left-[-10%] opacity-35" style={{ animationDuration: '25s' }} />
+            <div className="abstract-blob w-80 h-80 bg-[#6f00be] bottom-[-5%] right-[10%] opacity-35" style={{ animationDuration: '30s', animationDelay: '-5s' }} />
+            <div className="abstract-blob w-70 h-70 bg-[#00a572] top-[40%] left-[40%] opacity-20" style={{ animationDuration: '22s', animationDelay: '-2s' }} />
+          </div>
+        )}
+      </div>
 
       {/* iPhone Top Status Bar */}
       <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-11 pt-2 bg-transparent text-white drop-shadow-sm font-sans font-semibold text-sm">
