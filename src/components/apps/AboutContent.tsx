@@ -127,14 +127,14 @@ export default function AboutContent() {
               </span>
             </div>
 
-            <div className="p-3 rounded-xl bg-white/5 border border-white/10 space-y-1">
+            {/* <div className="p-3 rounded-xl bg-white/5 border border-white/10 space-y-1">
               <span className="text-white/50 text-[10px] uppercase font-bold tracking-wider block">
                 Core Expertise
               </span>
               <span className="text-purple-300 font-bold text-xs block">
                 Shopify & WordPress
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
 

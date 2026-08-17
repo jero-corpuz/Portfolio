@@ -603,6 +603,122 @@ export const PROJECTS: ProjectItem[] = [
       "Wine club churn fell below 5% and product discovery time dropped thanks to improved filtering.",
   },
   {
+    id: "stainhaus",
+    slug: "stainhaus",
+    title: "StainHaus Cedar Staining",
+    client: "Stainhaus.com",
+    category: "Duda",
+    excerpt:
+      "Custom Duda web experience for a premium cedar wood staining specialist, featuring tone removal guides and project quote paths.",
+    description:
+      "Built a sleek, high-conversion Duda site showcasing specialty cedar wood restoration, red-tone removal techniques, and instant service quote requests.",
+    year: "2024",
+    technologies: ["Duda", "CSS", "Lead Forms"],
+    tags: ["Duda", "Wood Staining", "Quote Forms", "SEO"],
+    gradient: "from-amber-700 via-orange-800 to-stone-900",
+    stars: "4.9",
+    metrics: "Custom Quote Funnel",
+    link: "https://stainhaus.com",
+    coverImage: "/images/projects/stainhaus/hero.jpg",
+    githubUrl: null,
+    highlights: [
+      "Crafted visual before-and-after galleries highlighting red-tone removal on cedar siding and decks.",
+      "Built streamlined quote request forms with automated location routing for local service inquiries.",
+      "Optimized responsive layouts and image compression for fast load times on mobile devices.",
+    ],
+    solution:
+      "Delivered a custom Duda web solution with structured service breakdowns and high-contrast lead capture paths.",
+    impact:
+      "Increased online estimate requests and established brand authority in high-end exterior cedar wood treatment.",
+  },
+  {
+    id: "payneless-termite",
+    slug: "payneless-termite",
+    title: "Payneless Termite & Renovation",
+    client: "Paynelesstermite.com",
+    category: "Duda",
+    excerpt:
+      "Duda site for a Sacramento termite inspection and dry rot repair company with online booking and service request flows.",
+    description:
+      "Designed and launched a trust-building Duda platform for Sacramento termite inspections, extermination treatments, and structural dry rot repair.",
+    year: "2024",
+    technologies: ["Duda", "Form Sync", "Local SEO"],
+    tags: ["Duda", "Local SEO", "Inspection Booking", "Pest Control"],
+    gradient: "from-amber-600 via-yellow-700 to-zinc-900",
+    stars: "4.9",
+    metrics: "Sacramento Service Hub",
+    link: "https://paynelesstermite.com",
+    coverImage: "/images/projects/payneless-termite/hero.jpg",
+    githubUrl: null,
+    highlights: [
+      "Structured service detail pages for escrow termite inspections, eradication treatments, and dry rot repair.",
+      "Integrated interactive booking request forms mapping directly to regional dispatch queues.",
+      "Implemented localized SEO schema targeting Sacramento county homeowners and real estate agents.",
+    ],
+    solution:
+      "Built an intuitive Duda portal that simplifies inspection requests and builds instant credibility for property owners.",
+    impact:
+      "Boosted organic local search visibility and streamlined inspection scheduling for escrow transactions.",
+  },
+  {
+    id: "old-coyote",
+    slug: "old-coyote",
+    title: "Old Coyote Latin-Fusion",
+    client: "Oldcoyotefood.com",
+    category: "Duda",
+    excerpt:
+      "Playful Duda site for a Sacramento Salvadoran & Latin-fusion restaurant and catering service.",
+    description:
+      "Created a vibrant Duda web presence for Old Coyote, highlighting authentic Salvadoran pupusas, Latin-fusion menus, and event catering bookings.",
+    year: "2024",
+    technologies: ["Duda", "Menu Widgets", "Catering Forms"],
+    tags: ["Duda", "Restaurant UI", "Catering", "Menu Design"],
+    gradient: "from-red-600 via-amber-700 to-stone-900",
+    stars: "5.0",
+    metrics: "Catering Inquiry Growth",
+    link: "https://oldcoyotefood.com",
+    coverImage: "/images/projects/old-coyote/hero.jpg",
+    githubUrl: null,
+    highlights: [
+      "Designed mouth-watering digital menus with dietary filter toggles and chef recommendations.",
+      "Built custom catering request forms tailored for corporate events and private parties.",
+      "Embedded location maps and operating hours optimized for quick mobile navigation.",
+    ],
+    solution:
+      "Developed a visually rich Duda website capturing brand energy and converting visitors into catering inquiries.",
+    impact:
+      "Expanded event catering bookings and drove consistent foot traffic to their Sacramento location.",
+  },
+  {
+    id: "empress-tavern",
+    slug: "empress-tavern",
+    title: "Empress Tavern Dining",
+    client: "Empresstavern.com",
+    category: "Duda",
+    excerpt:
+      "Atmospheric Duda site for a famous subterranean restaurant and bar in Sacramento featuring event booking and rotisserie menus.",
+    description:
+      "Crafted a cinematic Duda dining portal for Sacramento's Empress Tavern, featuring subterranean lounge imagery, seasonal menus, and private event hosting.",
+    year: "2024",
+    technologies: ["Duda", "OpenTable Sync", "Event UI"],
+    tags: ["Duda", "Dining UI", "Reservations", "Hospitality"],
+    gradient: "from-rose-900 via-neutral-900 to-black",
+    stars: "4.9",
+    metrics: "Reservations & Events Hub",
+    link: "https://empresstavern.com",
+    coverImage: "/images/projects/empress-tavern/hero.webp",
+    githubUrl: null,
+    highlights: [
+      "Showcased high-resolution subterranean interior photography and rotisserie culinary highlights.",
+      "Integrated direct table reservation widgets alongside private event inquiry funnels.",
+      "Built smooth multi-page layouts for dinner, drinks, and special culinary celebrations.",
+    ],
+    solution:
+      "Delivered an elegant Duda experience reflecting Empress Tavern's unique architecture and premier dining offerings.",
+    impact:
+      "Elevated online reservation conversions and simplified private venue booking inquiries.",
+  },
+  {
     id: "starlight-cabaret",
     slug: "starlight-cabaret",
     title: "The Starlight Cabaret",
