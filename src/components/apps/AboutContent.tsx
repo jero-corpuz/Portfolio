@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
+import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import {
   Download,
   Check,
@@ -9,17 +9,18 @@ import {
   User,
   Compass,
   Rocket,
-} from 'lucide-react';
+} from "lucide-react";
 
-const TimelineDemo = dynamic(() => import('../timeline-demo'), { ssr: false });
+const TimelineDemo = dynamic(() => import("../timeline-demo"), { ssr: false });
 
 const RESUME_URL =
-  'https://docs.google.com/document/d/1tt9LQ9mTlnZNipFOeCpIIifr95rXS9p6/edit?rtpof=true&sd=true&tab=t.0';
+  "https://docs.google.com/document/d/1tt9LQ9mTlnZNipFOeCpIIifr95rXS9p6/edit?rtpof=true&sd=true&tab=t.0";
 
-const AVATAR_URL = '/images/avatar/avatar.jpg';
+const AVATAR_URL =
+  "https://jero-portfolio.netlify.app/_next/image?url=%2Fimages%2Favatar%2Favatar.jpg&w=384&q=75";
 
 export default function AboutContent() {
-  const [activeTab, setActiveTab] = useState<'about' | 'experience'>('about');
+  const [activeTab, setActiveTab] = useState<"about" | "experience">("about");
   const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
@@ -45,9 +46,11 @@ export default function AboutContent() {
 
           {/* Name & Title */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-white tracking-tight">Jero</h2>
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              Jero
+            </h2>
             <p className="font-mono text-xs text-blue-400 uppercase tracking-widest font-bold mt-1">
-              Web Developer & Lead Arch
+              Web Developer
             </p>
           </div>
 
@@ -58,8 +61,7 @@ export default function AboutContent() {
               target="_blank"
               rel="noreferrer"
               onClick={handleDownload}
-              className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-2 border border-white/20 font-mono text-xs"
-            >
+              className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-2 border border-white/20 font-mono text-xs">
               {downloaded ? (
                 <>
                   <Check className="w-4 h-4 text-emerald-300" /> Opening...
@@ -75,13 +77,12 @@ export default function AboutContent() {
           {/* 2-Tab Menu Below Resume Button */}
           <div className="w-full flex flex-col gap-1.5 p-1.5 rounded-xl bg-black/40 border border-white/10 font-mono text-xs">
             <button
-              onClick={() => setActiveTab('about')}
+              onClick={() => setActiveTab("about")}
               className={`w-full py-2.5 px-3 rounded-lg font-bold transition-all flex items-center justify-between cursor-pointer ${
-                activeTab === 'about'
-                  ? 'bg-blue-500/20 text-blue-300 border border-blue-500/40 shadow-md'
-                  : 'text-white/60 hover:text-white hover:bg-white/5'
-              }`}
-            >
+                activeTab === "about"
+                  ? "bg-blue-500/20 text-blue-300 border border-blue-500/40 shadow-md"
+                  : "text-white/60 hover:text-white hover:bg-white/5"
+              }`}>
               <span className="flex items-center gap-2">
                 <User className="w-4 h-4 text-blue-400" />
                 About
@@ -90,13 +91,12 @@ export default function AboutContent() {
             </button>
 
             <button
-              onClick={() => setActiveTab('experience')}
+              onClick={() => setActiveTab("experience")}
               className={`w-full py-2.5 px-3 rounded-lg font-bold transition-all flex items-center justify-between cursor-pointer ${
-                activeTab === 'experience'
-                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-md'
-                  : 'text-white/60 hover:text-white hover:bg-white/5'
-              }`}
-            >
+                activeTab === "experience"
+                  ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-md"
+                  : "text-white/60 hover:text-white hover:bg-white/5"
+              }`}>
               <span className="flex items-center gap-2">
                 <Briefcase className="w-4 h-4 text-amber-400" />
                 Experience
@@ -122,7 +122,8 @@ export default function AboutContent() {
                 Philosophy
               </span>
               <span className="text-blue-300 font-bold text-xs flex items-center gap-1.5">
-                <Compass className="w-3.5 h-3.5 text-blue-400 shrink-0" /> Platform-Agnostic
+                <Compass className="w-3.5 h-3.5 text-blue-400 shrink-0" />{" "}
+                Platform-Agnostic
               </span>
             </div>
 
@@ -139,15 +140,21 @@ export default function AboutContent() {
 
         {/* Main Tab Content Display Area */}
         <div className="space-y-6">
-          {activeTab === 'about' && (
+          {activeTab === "about" && (
             <div className="space-y-6">
               <section className="space-y-2 bg-white/5 p-5 rounded-2xl border border-white/10">
                 <h3 className="text-lg font-bold text-white flex items-center gap-2">
                   <User className="w-5 h-5 text-blue-400" /> Who I Am
                 </h3>
                 <p className="text-sm text-white/90 leading-relaxed font-sans">
-                  I am a Web Developer focused on building high-performance, platform-agnostic digital experiences. My core philosophy is{' '}
-                  <span className="text-blue-400 font-semibold underline decoration-blue-500/50">flexibility</span>—identifying the perfect tool for every challenge, whether it's architecting a bespoke Shopify storefront, a custom WordPress ecosystem, or a streamlined low-code solution.
+                  I am a Web Developer focused on building high-performance,
+                  platform-agnostic digital experiences. My core philosophy is{" "}
+                  <span className="text-blue-400 font-semibold underline decoration-blue-500/50">
+                    flexibility
+                  </span>
+                  —identifying the perfect tool for every challenge, whether
+                  it's architecting a bespoke Shopify storefront, a custom
+                  WordPress ecosystem, or a streamlined low-code solution.
                 </p>
               </section>
 
@@ -156,9 +163,17 @@ export default function AboutContent() {
                   <Rocket className="w-5 h-5 text-emerald-400" /> What I Do
                 </h3>
                 <p className="text-sm text-white/90 leading-relaxed font-sans">
-                  Currently, I build bespoke Shopify storefronts at{' '}
-                  <span className="text-emerald-400 font-semibold">Uppertech</span> and lead WordPress architecture at{' '}
-                  <span className="text-blue-400 font-semibold">Blue Pig Web Solutions</span>. I bridge the gap between technical complexity and business growth, ensuring every project is not just functional, but built to adapt to the future.
+                  Currently, I build bespoke Shopify storefronts at{" "}
+                  <span className="text-emerald-400 font-semibold">
+                    Uppertech
+                  </span>{" "}
+                  and lead WordPress architecture at{" "}
+                  <span className="text-blue-400 font-semibold">
+                    Blue Pig Web Solutions
+                  </span>
+                  . I bridge the gap between technical complexity and business
+                  growth, ensuring every project is not just functional, but
+                  built to adapt to the future.
                 </p>
               </section>
 
@@ -167,16 +182,23 @@ export default function AboutContent() {
                   <Compass className="w-5 h-5 text-purple-400" /> My Journey
                 </h3>
                 <p className="text-sm text-white/80 leading-relaxed font-sans">
-                  My path in tech has been a journey through every stage of the product lifecycle. I started in customer support, learning the value of empathy and clear communication, before moving into Project Management to coordinate complex initiatives.
+                  My path in tech has been a journey through every stage of the
+                  product lifecycle. I started in customer support, learning the
+                  value of empathy and clear communication, before moving into
+                  Project Management to coordinate complex initiatives.
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed font-sans">
-                  Today, I combine that leadership foundation with deep technical expertise. Whether I’m shipping a custom block theme or coaching programmers, my goal is always the same: building fast, accessible, and high-converting web experiences that solve real problems.
+                  Today, I combine that leadership foundation with deep
+                  technical expertise. Whether I’m shipping a custom block theme
+                  or coaching programmers, my goal is always the same: building
+                  fast, accessible, and high-converting web experiences that
+                  solve real problems.
                 </p>
               </section>
             </div>
           )}
 
-          {activeTab === 'experience' && (
+          {activeTab === "experience" && (
             <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
               <TimelineDemo />
             </div>

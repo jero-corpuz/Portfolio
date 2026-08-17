@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { PROJECTS } from '@/data/osData';
 import { ProjectItem } from '@/types/os';
-import { Layers, Star, ExternalLink, Maximize2 } from 'lucide-react';
+import { Layers, ExternalLink, Maximize2 } from 'lucide-react';
 
 interface ProjectsContentProps {
   onOpenProjectFrame?: (title: string, url: string) => void;
@@ -92,9 +92,6 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
                   </span>
                   <span className="text-[10px] font-mono text-white/50">{project.year}</span>
                 </div>
-                <span className="flex items-center gap-1 font-mono text-xs text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
-                  <Star className="w-3 h-3 fill-amber-300" /> {project.stars}
-                </span>
               </div>
 
               <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors mb-1.5 flex items-center justify-between">
@@ -109,18 +106,6 @@ export default function ProjectsContent({ onOpenProjectFrame }: ProjectsContentP
               <p className="text-xs text-white/75 leading-relaxed font-sans mb-4">
                 {project.excerpt || project.description}
               </p>
-
-              {/* Technologies / Tags */}
-              <div className="flex flex-wrap gap-1.5 mb-4">
-                {project.technologies.map((t) => (
-                  <span
-                    key={t}
-                    className="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 text-white/70 border border-white/5"
-                  >
-                    #{t}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Footer */}
